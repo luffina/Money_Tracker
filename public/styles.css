@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind content */
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input, .input-box select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+.expenses-list {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.expenses-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expenses-list th, .expenses-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.expenses-list th {
+    background-color: #ff4081;
+    color: white;
+}
+
+.expenses-list tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.expenses-list tbody tr.expense {
+    color: red;
+}
+
+.expenses-list tbody tr.income {
+    color: green;
+}
